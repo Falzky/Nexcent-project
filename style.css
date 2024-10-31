@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+}
+
+.logo img {
+  height: 20px;
+  width: 150px;
+  cursor: pointer;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  color: #000;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #4caf4f;
+  text-decoration: underline;
+}
+
+.lg-btn {
+  border: none;
+  background-color: #f5f7fa;
+  color: #4caf4f;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.lg-btn:hover {
+  transform: rotate(90deg);
+}
+
+.sn-btn {
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf4f;
+  color: #f5f7fa;
+  padding: 10px 21px;
+  cursor: pointer;
+  transition: 1.5s ease-in-out;
+}
+
+.sn-btn:hover {
+  color: #4caf4f;
+  background-color: rgb(234, 255, 255);
+}
+
+/* Hero-section */
+
+.hero-content {
+  margin: 10% 13%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 25px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  color: #4d4d4d;
+  font-size: 3rem;
+}
+
+.highlight {
+  display: block;
+  color: #4caf4f;
+}
+
+.hero-content p {
+  color: #717171;
+}
+
+.reg-btn {
+  align-self: start;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf4f;
+  color: #f5f7fa;
+  padding: 20px 21px;
+}
+
+.png-1 {
+  max-width: 100%;
+  width: 430px;
+  align-self: start;
+  position: absolute;
+  right: 5rem;
+  top: 8rem;
+}
+
+.ads-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 25px 10%;
+}
+
+.ads {
+  margin: auto;
+}
+
+.ads h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #4d4d4d;
+}
+
+.ads p {
+  color: #717171;
+  font-size: 1rem;
+}
+
+.icons .ads-icon {
+  margin: 1.5rem 3.5rem;
+  width: 35px;
+}
+
+.cta-container {
+  display: grid;
+  background-color: #ffffff;
+  padding: 25px 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients {
+  margin: auto;
+}
+
+.clients h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.3rem;
+  color: #4d4d4d;
+}
+
+.highlight-2 {
+  display: block;
+}
+
+.clients p {
+  text-align: center;
+  color: #717171;
+}
+
+.cta-sub-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+  place-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.cta-icons {
+  margin-bottom: 10px;
+  width: 55px;
+}
+
+.cta-1-subsec,
+.cta-2-subsec,
+.cta-3-subsec {
+  padding: 35px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cta-1-subsec .cta-2-subsec .cta-3-subsec,
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
+  color: #4d4d4d;
+}
+
+.cta-1-subsec .cta-2-subsec .cta-3-subsec,
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #717171;
+}
+
+.cta-1-subsec:hover,
+.cta-2-subsec:hover,
+.cta-3-subsec:hover {
+  transform: translateY(-10px);
+}
+
+.pixelgrade-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: one for the image and one for the content */
+  gap: 40px; /* Space between the columns */
+  align-items: center; /* Align items vertically in the center */
+  background: #ffffff;
+  padding: 25px 10%; /* Add some padding */
+}
+
+.pixelgrade-img  {
+  width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.pixelgrade-content {
+  display: flex; /* Use flexbox for the content area */
+  flex-direction: column; /* Stack the elements vertically */
+  gap: 30px;
+}
+
+.pixelgrade-content h2 {
+  color: #4d4d4d;
+}
+
+.pixelgrade-content p {
+  color: #717171;
+}
+
+.learn-btn {
+  align-self: start;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf4f;
+  color: #f5f7fa;
+  padding: 20px 21px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f5f7fa;
+  gap: 50px; /* Space between the columns */
+  align-items: center; /* Align items vertically in the center */
+  padding: 25px 10%;
+}
+
+.services-content {
+  display: flex; /* Use flexbox for the content area */
+  flex-direction: column; /* Stack the elements vertically */
+  gap: 30px;
+}
+
+.services-content h2 {
+  color: #4d4d4d;
+  font-size: 2rem;
+}
+
+.services-content p {
+  color: #18191f;
+  font-weight: bold;
+}
+
+.highlight-3 {
+  display: block;
+  color: #4caf4f;
+}
+
+.tutorial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: one for the image and one for the content */
+  gap: 40px; /* Space between the columns */
+  align-items: center; /* Align items vertically in the center */
+  background: #ffffff;
+  padding: 25px 10%; /* Add some padding */
+}
+
+.tutorial-img {
+  width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.tutorial-content {
+  display: flex; /* Use flexbox for the content area */
+  flex-direction: column; /* Stack the elements vertically */
+  gap: 30px;
+}
+
+.tutorial-content h2 {
+  color: #4d4d4d;
+}
+
+.tutorial-content p {
+  color: #717171;
+}
+
+.learn-btn-2 {
+  align-self: start;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf4f;
+  color: #f5f7fa;
+  padding: 20px 21px;
+}
+
+
+.tsmith-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: one for the image and one for the content */
+  align-items: center; /* Align items vertically in the center */
+  padding: 25px 10%; /* Add some padding */
+}
+
+.tsmith-img {
+  width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.tsmith-content {
+  display: flex; /* Use flexbox for the content area */
+  flex-direction: column; /* Stack the elements vertically */
+  gap: 30px;
+}
+
+.tsmith-content h2 {
+  color: #4d4d4d;
+}
+
+.tsmith-content p {
+  color: #717171;
+}
+
+.icons-2 .smith-icons {
+  display: inline-block;
+} 
+
+
+ 
+
+
+.marketing-container{
+  background-color: #ffffff;
+  padding: 25px 10%;
+  
+}
+
+
+.marketing-content {
+margin: auto;
+}
+
+.marketing-content h2 {
+text-align: center;
+margin-bottom: 10px;
+font-size: 2.5rem;
+color: #4d4d4d;
+}
+
+.marketing-content p {
+color: #717171;
+font-size: 1rem;
+text-align: center;
+}
+
+.mkt-subsec {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+place-items: center;
+padding-top: 25px;
+gap: 40px;
+}
+
+.language-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.language-content{
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 30px;
+}
+
+.demo-btn {
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf4f;
+  color: #f5f7fa;
+  padding: 14px 21px;
+  cursor: pointer;
+  margin: 25px 25px;
+}
+
+.demo-btn::after{
+  content:"\2192";
+  margin-left: 8px; 
+  font-size: 16px;
+}
+
+.nex-footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background: #263238;
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.nex-footer .company h3{
+  color: #ffffff;
+}
+
+.nex-footer .support h3{
+  color: #ffffff;
+}
+
+.nex-footer .email-input-container h3{
+  color: #ffffff;
+}
+
+.nex-footer ul{
+list-style: none;
+line-height: 30px;
+}
+
+.social-icons{
+  display: flex;
+  margin-top: 10px;
+  width: 130px;
+  
+}
+
+.send-email{
+  background: #3E4A52;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 230px;
+}
+
+.email-input{
+  background:  #3E4A52;
+  outline: none;
+  border: none;
+}
+
+.send-icon{
+  background:  #3E4A52;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Stack elements vertically and center-align them */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hide the navigation links initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f5f7fa;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  /* Style the navigation items in the dropdown */
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  /* Show the navigation on toggle */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Adjust button layout */
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Toggle icon */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+}
